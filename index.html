@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PORTFOLIO</title>
+    <link rel="icon" href="assets/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- ANIMATION LINKS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <h1><a href="">PORTFOLIO</a></h1>
+        </div>
+
+        <ul id="nav-items" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <li><a href="">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation Section -->
+    <section id="about">
+        <img id="person-img" src="assets/person.png" alt="person img" data-aos="zoom-in" data-aos-duration="1000">
+        <div id="content" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <h2>HI! I'M <span>BENNY CUTIE</span></h2>
+            <h4>Aspiring Backend Web Developer</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laudantium perferendis nihil rem nobis.
+            </p>
+
+            <div id="social-media">
+                <a href="#">
+                    <img src="assets/facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="assets/instagram.png" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="assets/twitter.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div id="skills-title" data-aos="fade-down" data-aos-duration="1000">
+            <h2>
+                <img src="assets/div.png" alt="div icon">
+                SKILLS
+                <img src="assets/div.png" alt="div icon">
+            </h2>
+        </div>
+
+        <div id="content">
+            <div id="skills-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <img src="assets/skills.png" alt="skills img">
+            </div>
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                <h3>Frontend Tech Stack</h3>
+                <div id="frontend-stack">
+                    <img src="assets/HTML.png" alt="HTML">
+                    <img src="assets/CSS.png" alt="CSS">
+                    <img src="assets/bootstrap.png" alt="BOOTSTRAP">
+                </div>
+
+                <h3>Backend Tech Stack</h3>
+                <div id="backend-stack">
+                    <img src="assets/JS.png" alt="JS">
+                    <img src="assets/SQL.png" alt="SQL">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contact-container">
+            <div id="contact-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <img src="assets/contact.png" alt="contact img">
+            </div>
+
+            <div id="contact-content" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div id="social-container">
+                    <h2>SOCIAL</h2>
+
+                    <div id="social-img">
+                        <a href="#">
+                            <img src="assets/facebook.png" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="assets/instagram.png" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="assets/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div id="link-container">
+                    <h2>LINKS</h2>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </footer>
+    </section>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

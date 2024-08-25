@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: "Ubuntu", sans-serif;
+    background-color: white;
+}
+
+/* Navbar Section */
+nav {
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px grey;
+    padding: 0px 25px;
+}
+
+nav h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h1 a:hover {
+    color: cyan;
+}
+
+#nav-items {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-items a:hover {
+    color: aqua;
+}
+
+/* About Section */
+#about {
+    height: 537px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+#about img {
+    object-fit: cover;
+    text-align: center;
+}
+
+#content h2 {
+    font-size: 46px;
+    margin: 0px;
+}
+
+#content h4 {
+    font-size: 26px;
+    margin: 0px 0px 1.5rem 0px;
+}
+
+#content p {
+    font-size: 20px;
+    margin: 0px 0px 1.5rem 0px;
+}
+
+#social-media {
+    display: flex;
+    gap: 25px;
+}
+
+#social-media img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+span {
+    color: purple;
+}
+
+/* Skills Section */
+#skills {
+    background-color: grey;
+    color: white;
+    height: auto;
+    padding: 2rem 50px;
+}
+
+#skills-title {
+    margin-bottom: 1rem;
+}
+
+#skills h2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    font-size: 46px;
+}
+
+#skills h3 {
+    font-size: 26px;
+}
+
+#skills h2 img {
+    width: 50px;
+    height: 50px;
+}
+
+#frontend-stack {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 0px 0px 2rem 0px;
+}
+
+#frontend-stack img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#backend-stack {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    object-fit: contain;
+}
+
+#backend-stack img {
+    width: 60px;
+    height: 60px;
+}
+
+#skills-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+#skills #content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+/* Contact Section */
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#contact-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+#social-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+#social-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+#link-container ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0px;
+}
+
+#link-container ul li a {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#link-container ul li a:hover {
+    color: black;
+}
+
+#contact-content h2 {
+    font-size: 26px;
+    margin: 0px;
+}
+
+#social-container {
+    margin-bottom: 2rem;
+}
+
+#social-container h2 {
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0px;
+}
+
+footer p {
+    text-align: center;
+}
