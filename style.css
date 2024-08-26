@@ -3,45 +3,100 @@ body {
     padding: 0;
     height: auto;
     font-family: "Ubuntu", sans-serif;
-    background-color: white;
+    background-color: var(--body-bg-white);
+
+    /* Slow transition of light/dark mode colors */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+:root {
+    --body-bg-white: white;
+
+    --nav-bg-white: white;
+    --nav-text-black: black;
+    --nav-hover-purple: purple;
+    --nav-shadow-lightgrey: lightgrey;
+
+    --about-text-black: black;
+    --about-span-purple: purple;
+
+    --skills-bg-grey: grey;
+    --skills-text-white: white;
+
+    --social-title-black: black;
+    --social-links-grey: grey;
+    --social-hover-black: black;
+
+    --footer-bg-black: black;
+    --footer-text-white: white;
+}
+
+.dark-theme {
+    --body-bg-white: black;
+
+    --nav-bg-white: black;
+    --nav-text-black: white;
+    --nav-hover-purple: cyan;
+    --nav-shadow-lightgrey: rgb(51, 51, 51);
+
+    --about-text-black: white;
+    --about-span-purple: cyan;
+
+    --skills-bg-grey: black;
+    --skills-text-white: white;
+
+    --social-title-black: white;
+    --social-links-grey: white;
+    --social-hover-black: cyan;
+
+    --footer-bg-black: black;
+    --footer-text-white: white;
 }
 
 /* Navbar Section */
 nav {
-    background-color: black;
-    color: white;
+    background-color: var(--nav-bg-white);
+    color: var(--nav-text-black);
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 5px grey;
+    box-shadow: 0px 3px 5px var(--nav-shadow-lightgrey);
     padding: 0px 25px;
 }
 
 nav h1 a {
-    color: white;
+    color: var(--nav-text-black);
     text-decoration: none;
 }
 
 nav h1 a:hover {
-    color: cyan;
+    color: var(--nav-hover-purple);
 }
 
 #nav-items {
     display: flex;
     gap: 25px;
     font-size: 18px;
+    align-items: center;
     list-style-type: none;
 }
 
 #nav-items a {
-    color: white;
+    color: var(--nav-text-black);
     text-decoration: none;
     font-weight: bold;
 }
 
 #nav-items a:hover {
-    color: aqua;
+    color: var(--nav-hover-purple);
+}
+
+#nav-items #icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /* About Section */
@@ -50,6 +105,7 @@ nav h1 a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--about-text-black);
     padding: 0px 50px;
 }
 
@@ -85,13 +141,13 @@ nav h1 a:hover {
 }
 
 span {
-    color: purple;
+    color: var(--about-span-purple);
 }
 
 /* Skills Section */
 #skills {
-    background-color: grey;
-    color: white;
+    background-color: var(--skills-bg-grey);
+    color: var(--skills-text-white);
     height: auto;
     padding: 2rem 50px;
 }
@@ -194,14 +250,14 @@ span {
 }
 
 #link-container ul li a {
-    color: grey;
+    color: var(--social-links-grey);
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
 }
 
 #link-container ul li a:hover {
-    color: black;
+    color: var(--social-hover-black);
 }
 
 #contact-content h2 {
@@ -215,6 +271,10 @@ span {
 
 #social-container h2 {
     margin-bottom: 16px;
+}
+
+.contact-subtitle {
+    color: var(--social-title-black);
 }
 
 footer {

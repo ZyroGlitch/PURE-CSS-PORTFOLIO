@@ -40,3 +40,23 @@ document.addEventListener('DOMContentLoaded', function (event) {
     // start the text animation
     StartTextAnimation(0);
 });
+
+// Light / Dark Mode Function
+var icon = document.getElementById('icon');
+var twitter = document.querySelectorAll('.twitter');
+
+icon.onclick = () => {
+    document.body.classList.toggle('dark-theme');
+
+    if (document.body.classList.contains('dark-theme')) {
+        icon.src = 'assets/sun.png';
+        twitter[0].src = 'assets/twitter-light.png';
+        twitter[1].src = 'assets/twitter-light.png';
+    } else {
+        icon.src = 'assets/dark.png';
+        twitter[0].src = 'assets/twitter.png';
+        twitter[1].src = 'assets/twitter.png';
+    }
+}
+
+
